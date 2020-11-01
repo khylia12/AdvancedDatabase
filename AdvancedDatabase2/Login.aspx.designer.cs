@@ -11,7 +11,7 @@ namespace AdvancedDatabase2
 {
 
 
-    public partial class About
+    public partial class Login
     {
 
         /// <summary>
