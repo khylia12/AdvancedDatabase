@@ -17,26 +17,32 @@ namespace AdvancedDatabase2
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Button1_Click1(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=LAPTOP-UHQJEQAC; Initial Catalog=Accounts; Integrated Security=True;");
-            SqlDataAdapter sda = new SqlDataAdapter("Select * from Login where Email='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "'",con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows.Count == 1)
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;");
+            if (con.State==ConnectionState.Closed)
             {
-                Thread.Sleep(5);
-                Label1.Text = "Login Successfull...";
-                Label1.ForeColor = System.Drawing.Color.Green;
+                con.Open();
+            }
+            SqlCommand cmd = new SqlCommand("Select * from login where Email='" + TextBox1.Text + "' and Password='" + TextBox2.Text + "'",con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    Response.Write("<script>alert('Successful Login');</script>");
+                    Session["Email"] = dr.GetValue(2).ToString();
+                    Session["Password"] = dr.GetValue(3).ToString();
+                    Session["role"] = "admin";
+                }
                 Response.Redirect("Admin.aspx");
             }
             else
             {
-                Label1.Text = "Login Unsuccessfull...";
-                Label1.ForeColor = System.Drawing.Color.Red;
+                Response.Write("<script>alert('Invalid credentials');</script>");
             }
         }
 
-        
     }
 }

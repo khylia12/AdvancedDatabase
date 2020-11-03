@@ -11,61 +11,70 @@ namespace AdvancedDatabase2
 {
 
 
-    public partial class Admin
+    public partial class Promotion
     {
 
         /// <summary>
-        /// Customers control.
+        /// Emp_ID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Customers;
+        protected global::System.Web.UI.WebControls.TextBox Emp_ID;
 
         /// <summary>
-        /// Promotion control.
+        /// GoButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Promotion;
+        protected global::System.Web.UI.WebControls.LinkButton GoButton;
 
         /// <summary>
-        /// Used_Items control.
+        /// EmpType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Used_Items;
+        protected global::System.Web.UI.WebControls.TextBox EmpType;
 
         /// <summary>
-        /// Salary control.
+        /// DOB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Salary;
+        protected global::System.Web.UI.WebControls.TextBox DOB;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// Address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.TextBox Address;
 
         /// <summary>
-        /// LinkButton2 control.
+        /// Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.TextBox Name;
+
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

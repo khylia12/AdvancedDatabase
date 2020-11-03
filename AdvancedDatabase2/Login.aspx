@@ -1,40 +1,53 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AdvancedDatabase2.Login" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<div align="center">
-  <table style="height: 445px; width: 536px; background-color: #FFCCFF;" >
-        <tr>
-            <td colspan="2" style="background-color:white;font-family:'Palatino Linotype';text-align: center"><B>Login Page</B></td>
-        </tr>
-        <tr style="width:50%">
-            <td class="auto-style1" align="center"><b> Email ID</b></td>
-            <td>
-                <asp:TextBox ID="TextBox1" runat="server" Height="53px" Width="227px" BackColor="#FFCCFF" TextMode="Email" ></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style1" align="center"><b>Password</b> </td>
-            <td>
-                <asp:TextBox ID="TextBox2" runat="server" Height="53px" Width="227px" BackColor="#FFCCFF" TextMode="Password">
-</asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-
-                <asp:Button ID="Button1" runat="server" Height="49px" Text="Login" Width="132px" BackColor="#FFCCFF" OnClick="Button1_Click" Font-Bold="True" Font-Size="Large" />
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            </td>
-        </tr>
-    </table>
-
-</div>      
-   
-</asp:Content>
+<div class="container">
+        <img src="images/6.jpg" class="img-fluid"/>
+      <div class="row">
+         <div class="col-md-6 mx-auto">
+            <div class="card">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col">
+                        <center>
+                           <img width="150px" src="images/admin.png"/>
+                        </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <center>
+                           <h3>Admin Login</h3>
+                        </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <hr>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <label>Admin ID</label>
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Admin ID"></asp:TextBox>
+                        </div>
+                        <label>Password</label>
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click1" />
+                            <br />
+                            <asp:label ID="l1" runat="server" Text=""></asp:label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a href="homepage.aspx"><< Back to Home</a><br><br>
+         </div>
+      </div>
+   </div></asp:Content>
 
 
