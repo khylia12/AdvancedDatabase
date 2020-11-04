@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AdvancedDatabase2.Login" %>
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-<div class="container">
-        <img src="images/6.jpg" class="img-fluid"/>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="PH1" runat="server">
+    <div class="container">
       <div class="row">
          <div class="col-md-6 mx-auto">
             <div class="card">
@@ -10,7 +10,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <img width="150px" src="images/admin.png"/>
+                           <img width="150px" src="Image/admin.png" />
                         </center>
                      </div>
                   </div>
@@ -48,6 +48,8 @@
             <a href="homepage.aspx"><< Back to Home</a><br><br>
          </div>
       </div>
-   </div></asp:Content>
+   </div>
+
+</asp:Content>
 
 

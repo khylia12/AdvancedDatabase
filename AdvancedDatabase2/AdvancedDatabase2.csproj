@@ -114,9 +114,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CountJew.aspx" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="footer.css" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -126,8 +128,27 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="glyphicons-halflings-regular.svg" />
+    <Content Include="glyphicons-halflings-regular.woff" />
+    <Content Include="glyphicons-halflings-regular.ttf" />
+    <Content Include="glyphicons-halflings-regular.eot" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="HELLO.aspx" />
+    <Content Include="Image\admin.png" />
     <Content Include="Image\Jewelry.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="js\datatables\js\0-236_instagram-icon-black.png" />
+    <Content Include="js\datatables\js\384e0b3361d99d9c370b4037115324b9-flat-vintage-car-icon-by-vexels.png" />
+    <Content Include="js\datatables\js\880399bc9c9ac39cbbfe7a39712a8711.png" />
+    <Content Include="js\datatables\js\Black-icon-Twitter-logo-transparent-PNG.png" />
+    <Content Include="js\datatables\js\car icon.png" />
+    <Content Include="js\datatables\js\download.png" />
+    <Content Include="js\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="js\datatables\js\png-clipart-computer-icons-white-instagram-icon-text-logo.png" />
+    <Content Include="js\datatables\js\png-clipart-facebook-twitter-and-instagram-logo-social-media-facebook-computer-icons-social-networking-service-like-us-on-facebook-text-logo.png" />
+    <Content Include="js\jquery-3.5.1.slim.min.js" />
+    <Content Include="js\popper.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Promotion.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -207,6 +228,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HELLO.aspx.cs">
+      <DependentUpon>HELLO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HELLO.aspx.designer.cs">
+      <DependentUpon>HELLO.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
