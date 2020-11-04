@@ -45,5 +45,20 @@ namespace AdvancedDatabase2
         {
             Response.Redirect("UpdInven.aspx");
         }
+
+        protected void Payment_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Payment.aspx");
+        }
+
+        protected void Sales_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MostSales.aspx");
+        }
+
+        protected void CustRent_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CustRent.aspx");
+        }
     }
 }

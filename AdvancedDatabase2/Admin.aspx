@@ -3,19 +3,23 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class=container>
+        <h3> Admin Procedure List </h3>
         <br />
         <br />
+                <h4 style="font-family:'Times New Roman';color:red">PROCEDURES</h4>
                 <asp:LinkButton class="nav-link" ID="Customers" runat="server" Visible="true" OnClick="Customers_Click"> Add and Update Jewellery information</asp:LinkButton>
                 <br />
                 <asp:LinkButton class="nav-link" ID="Promotion" runat="server" Visible="true" OnClick="Promotion_Click"> Promotion/Demotion </asp:LinkButton>
-                <br />
-                <asp:LinkButton class="nav-link" ID="Used_Items" runat="server" Visible="true" OnClick="Used_Items_Click">Employee Commission</asp:LinkButton>
-        <br />
+   <br />
         <asp:LinkButton class="nav-link" ID="Salary" runat="server" Visible="true" OnClick="UpdateSalary"> Update Salary </asp:LinkButton>
         <br />
-        <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" Visible="true" OnClick="CountJew"> Count Jewellery </asp:LinkButton>
+      <h4 style="font-family:'Times New Roman';color:red">TRANSACTION</h4>
+        <asp:LinkButton class="nav-link" ID="Payment" runat="server" Visible="true" OnClick="Payment_Click"> Employee Payment $ Transfer </asp:LinkButton>
+
+        <h4 style="font-family:'Times New Roman';color:red">FUNCTIONS</h4>
+        <asp:LinkButton class="nav-link" ID="M_Sales" runat="server" Visible="true" OnClick="Sales_Click">Employee Who Made The Most Sales</asp:LinkButton>
         <br />
-        <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" Visible="true" OnClick="UpdInven"> Update Inventory and Add Rent </asp:LinkButton>
+        <asp:LinkButton class="nav-link" ID="CusRent" runat="server" Visible="true" OnClick="CustRent_Click"> Customer That Rented The Most Jewelry </asp:LinkButton>
 </div>
     
  </asp:Content>   

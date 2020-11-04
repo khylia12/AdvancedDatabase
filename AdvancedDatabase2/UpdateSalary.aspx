@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateSalary.aspx.cs" Inherits="AdvancedDatabase2.UpdateSalary" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+        <br />
+      <h4 style="font-family:'Times New Roman';text-align:center;color:red">Notice: This Procedure will be restricted if salary is exceeds $60,000.00 due to a trigger in the database</h4>
+    </div>
     <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">
@@ -60,9 +64,12 @@
                      </div>
                 </div>
              
-            <a href="homepage.aspx"><< Back to Home</a><br>
+                <br>
+             
+                <asp:Button ID="Button2" runat="server" Text="&lt;&lt; Go Back" Font-Bold="True" Height="36px" OnClick="Button2_Click" Width="104px" />
             <br>
           </div>
     </div>
     </div>
+</div>
 </asp:Content>

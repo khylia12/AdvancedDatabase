@@ -11,17 +11,26 @@ namespace AdvancedDatabase2
 {
 
 
-    public partial class UpdateVPandBP
+    public partial class Payment
     {
 
         /// <summary>
-        /// Jewel_ID control.
+        /// AdminId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Jewel_ID;
+        protected global::System.Web.UI.WebControls.TextBox AdminId;
+
+        /// <summary>
+        /// EmpId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox EmpId;
 
         /// <summary>
         /// GoButton control.
@@ -33,67 +42,31 @@ namespace AdvancedDatabase2
         protected global::System.Web.UI.WebControls.LinkButton GoButton;
 
         /// <summary>
-        /// MetalType control.
+        /// AdminAc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MetalType;
+        protected global::System.Web.UI.WebControls.TextBox AdminAc;
 
         /// <summary>
-        /// Description control.
+        /// EmpBal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Description;
+        protected global::System.Web.UI.WebControls.TextBox EmpBal;
 
         /// <summary>
-        /// V_Price control.
+        /// Trans control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox V_Price;
-
-        /// <summary>
-        /// U_Jewel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox U_Jewel;
-
-        /// <summary>
-        /// Buy_Price control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Buy_Price;
-
-        /// <summary>
-        /// QuanAv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox QuanAv;
-
-        /// <summary>
-        /// Button2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.TextBox Trans;
 
         /// <summary>
         /// Button1 control.
@@ -105,6 +78,15 @@ namespace AdvancedDatabase2
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
+        /// GridView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView1;
+
+        /// <summary>
         /// Button3 control.
         /// </summary>
         /// <remarks>
@@ -114,12 +96,12 @@ namespace AdvancedDatabase2
         protected global::System.Web.UI.WebControls.Button Button3;
 
         /// <summary>
-        /// Button4 control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
+        protected global::System.Web.UI.WebControls.Button Button2;
     }
 }

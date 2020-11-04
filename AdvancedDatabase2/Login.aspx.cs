@@ -19,7 +19,7 @@ namespace AdvancedDatabase2
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;");
+            SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-UHQJEQAC; Initial Catalog=Adv_Database_project; Integrated Security=True;");
             if (con.State==ConnectionState.Closed)
             {
                 con.Open();

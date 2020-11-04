@@ -20,7 +20,7 @@ namespace AdvancedDatabase2
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;");
+                SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-UHQJEQAC; Initial Catalog=Adv_Database_project; Integrated Security=True;");
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
@@ -51,7 +51,7 @@ namespace AdvancedDatabase2
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;");
+                SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-UHQJEQAC; Initial Catalog=Adv_Database_project; Integrated Security=True;");
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
@@ -84,7 +84,7 @@ namespace AdvancedDatabase2
             {
                 try
                 {
-                    SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;");
+                    SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-UHQJEQAC; Initial Catalog=Adv_Database_project; Integrated Security=True;");
                     if (con.State == ConnectionState.Closed)
                     {
                         con.Open();
@@ -110,6 +110,11 @@ namespace AdvancedDatabase2
             {
                 Response.Write("<script>alert('Invalid Salary ID');</script>");
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin.aspx");
         }
     }
 }

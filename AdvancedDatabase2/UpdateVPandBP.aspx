@@ -76,18 +76,23 @@
                    <div class="row">                     
                      <div class="col-4">
                         <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="ADD" OnClick="Button2_Click" />
+                         <BR />
+                         <BR />
                      </div>
                        <div class="col-4">
-                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-danger" runat="server" Text="UPDATE" OnClick="Button3_Click" />
-                     </div>
+                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-danger" runat="server" Text="UPDATE" OnClick="Button3_Click" align="Center" />
+                     <BR />
+                       </div>
                        <div class="col-4">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-danger" runat="server" Text="DELETE" OnClick="Button4_Click" />
                      </div>
                   </div>
                      </div>
                 </div>
              
-            <a href="homepage.aspx"><< Back to Home</a><br>
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-danger" runat="server" Text="DELETE" OnClick="Button4_Click" />
+                     <br>
+             
+             <asp:Button ID="Button4" runat="server" Text="<< Go Back" Font-Bold="True" Height="37px" style="margin-top: 0" Width="126px" OnClick="Button4_Click1" />
             <br>
           </div>
     </div>
