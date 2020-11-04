@@ -11,7 +11,38 @@ namespace AdvancedDatabase2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if(string.IsNullOrEmpty((string)Session["role"]))
+                    {
+                        adminlogbutton.Visible = false;
+                        LinkButton1.Visible = true;
+                    }
+                else if (Session["role"].Equals("admin"))
+                {
+                    adminlogbutton.Visible = true;
+                    LinkButton1.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
 
+            }
+        }
+
+        protected void Adminlog(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.Aspx");
+        }
+
+        protected void AdminNav(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin.aspx");
+        }
+
+        protected void AdminNas(object sender, EventArgs e)
+        {
+            Response.Redirect("HELLO.aspx");
         }
     }
 }

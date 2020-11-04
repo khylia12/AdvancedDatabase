@@ -18,7 +18,7 @@ namespace AdvancedDatabase2
 
         protected void Gobutton(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;")) ;
             /*{
                 connection.Open();
 

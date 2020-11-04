@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Promotion.aspx.cs" Inherits="AdvancedDatabase2.Promotion" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="PH1" runat="server">
     <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">
@@ -37,7 +39,7 @@
                      <div class="col-md-9">
                         <label> Employee Type</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="EmpType" runat="server" placeholder="MetalType"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="EmpType" runat="server" placeholder="Employee Type"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -45,17 +47,17 @@
                      <div class="col-md-6">
                         <label>DOB</label>
                         <div class="form-group">            
-                            <asp:TextBox CssClass="form-control" ID="DOB" runat="server" placeholder="Description1" ReadOnly="true"></asp:TextBox>                        
+                            <asp:TextBox CssClass="form-control" ID="DOB" runat="server" placeholder="Date of Birth" ReadOnly="true"></asp:TextBox>                        
                         </div>
                         <label>Address</label>
                         <div class="form-group">
-                            <asp:TextBox CssClass="form-control" ID="Address" runat="server" placeholder="V_Price"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control" ID="Address" runat="server" placeholder="Address"></asp:TextBox>
                           </div>
                      </div>
                      <div class="col-md-6">
                         <label>Name</label>
                         <div class="form-group">
-                            <asp:TextBox CssClass="form-control" ID="Name" runat="server" placeholder="U_Jewel"></asp:TextBox>
+                            <asp:TextBox CssClass="form-control" ID="Name" runat="server" placeholder="Name"></asp:TextBox>
                    </div>
                         </div>
                      </div>

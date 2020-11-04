@@ -101,42 +101,8 @@ namespace AdvancedDatabase2
                 Response.Write("<script>alert('Invalid Vehicle ID');</script>");
             }
         }
-
-        //delete Button
-        protected void Button4_Click(object sender, EventArgs e)
-        {
-            if (checkifJewexists())
-            {
-                try
-                {
-                    SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0C5T5JD\SQLEXPRESS; Initial Catalog=Advance_Database_Project1; Integrated Security=True;");
-                    if (con.State == ConnectionState.Closed)
-                    {
-                        con.Open();
-                    }
-                    SqlCommand cmd = new SqlCommand("Add_Update_Delete", con);
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-
-                    cmd.Parameters.AddWithValue("@action", "Delete");
-                    cmd.Parameters.AddWithValue("@jewel_id", Jewel_ID.Text.Trim());
-
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                    Response.Write("<script>alert('Item deleted successfully.');</script>");
-
-                }
-                catch (Exception ex)
-                {
-                    Response.Write("<script>alert('" + ex.Message + "');</script>");
-                }
-            }
-            else
-            {
-                Response.Write("<script>alert('Invalid Jewellery ID');</script>");
-            }
-
-        }
+                
+        
         bool checkifJewexists()
         {
             try
